@@ -1,0 +1,23 @@
+{
+  "name": "df-repack",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@8.9.2",
+  "scripts": {
+    "start:host": "pnpm --filter host start",
+    "start:account": "pnpm --filter account start",
+    "start:loan": "pnpm --filter loan start",
+    "start:auth": "pnpm --filter auth start",
+    "start:catalog": "pnpm --filter catalog-server start",
+    "run:host:android": "pnpm --filter host android",
+    "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
+    "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

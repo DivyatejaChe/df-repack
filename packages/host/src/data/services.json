@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "id": "account",
+            "title": "Accounts",
+            "description": "Check your accounts",
+            "image": "https://picsum.photos/700"
+        },
+        {
+            "id": "loan",
+            "title": "Loans",
+            "description": "Check your loans",
+            "image": "https://picsum.photos/700"
+        }
+    ]
+}
