@@ -12,8 +12,7 @@ const SignInScreen = () => {
         Welcome!
       </Text>
       <Text style={styles.welcomeText} variant="bodyLarge">
-        This is a dummy login screen. Just press the button and have a look
-        around this super app 🚀
+        Tap Login to enter
       </Text>
       <Button mode="contained" onPress={signIn}>
         Login
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   welcomeHeadline: {
-    color: MD3Colors.primary20,
+    color: MD3Colors.primary10,
   },
   welcomeText: {
     padding: 16,

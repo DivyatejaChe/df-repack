@@ -1,15 +1,13 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import AccountsScreen from '../screens/AccountsScreen';
+import Transactions from '../screens/Transaction';
 import TabsNavigator from './TabsNavigator';
-import LoanScreen from '../screens/LoanScreen';
+import CardsScreen from '../screens/CardsScreen';
 
 export type MainStackParamList = {
   Tabs: undefined;
-  Booking: undefined;
-  Shopping: undefined;
-  News: undefined;
-  Dashboard: undefined;
+  Transactions: undefined;
+  Cards: undefined;
 };
 
 const Main = createNativeStackNavigator<MainStackParamList>();
@@ -21,8 +19,8 @@ const MainNavigator = () => {
         headerShown: false,
       }}>
       <Main.Screen name="Tabs" component={TabsNavigator} />
-      <Main.Screen name="Accounts" component={AccountsScreen} />
-      <Main.Screen name="Loans" component={LoanScreen} />
+      <Main.Screen name="Transactions" component={Transactions} />
+      <Main.Screen name="Cards" component={CardsScreen} />
     </Main.Navigator>
   );
 };

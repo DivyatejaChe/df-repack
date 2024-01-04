@@ -2,11 +2,11 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import NavBar from '../components/NavBar';
-import AccountList from '../screens/AccountList';
+import TransactionsScreen from '../screens/TransactionsScreen';
 
 export type HomeStackParamList = {
   Home: undefined;
-  Upcoming: undefined;
+  Transactions: undefined;
 };
 
 const Home = createNativeStackNavigator<HomeStackParamList>();
@@ -18,7 +18,7 @@ const HomeNavigator = () => {
         header: NavBar,
       }}>
       <Home.Screen name="Home" component={HomeScreen} />
-      <Home.Screen name="AccountList" component={AccountList} />
+      <Home.Screen name="Transactions" component={TransactionsScreen} />
     </Home.Navigator>
   );
 };

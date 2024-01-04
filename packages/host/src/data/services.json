@@ -1,15 +1,15 @@
 {
     "data": [
         {
-            "id": "account",
-            "title": "Accounts",
-            "description": "Check your accounts",
+            "id": "transactions",
+            "title": "Transactions",
+            "description": "Check your transactions",
             "image": "https://picsum.photos/700"
         },
         {
-            "id": "loan",
-            "title": "Loans",
-            "description": "Check your loans",
+            "id": "cards",
+            "title": "Cards",
+            "description": "Explore bank cards",
             "image": "https://picsum.photos/700"
         }
     ]

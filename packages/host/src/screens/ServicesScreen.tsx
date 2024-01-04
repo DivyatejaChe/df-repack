@@ -26,13 +26,13 @@ type ServiceMenuItem = {
 };
 
 const ServicesScreen = ({navigation}: ServiceScreenProps) => {
-  const openAccount = useCallback(
-    () => navigation.navigate('Accounts'),
+  const openTransactions = useCallback(
+    () => navigation.navigate('Transactions'),
     [navigation],
   );
 
-  const openLoan = useCallback(
-    () => navigation.navigate('Loans'),
+  const openCards = useCallback(
+    () => navigation.navigate('Cards'),
     [navigation],
   );
 
@@ -41,8 +41,8 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
     ({item, index}: ListRenderItemInfo<ServiceMenuItem>) => {
       const lastItem = index === services.data.length - 1;
       const map = new Map([
-        ['account', openAccount],
-        ['loan', openLoan],
+        ['transactions', openTransactions],
+        ['cards', openCards],
       ]);
 
       const onPress =
@@ -60,7 +60,7 @@ const ServicesScreen = ({navigation}: ServiceScreenProps) => {
         </View>
       );
     },
-    [openBooking, openDashboard, openNews, openShopping],
+    [openTransactions, openCards],
   );
 
   return (

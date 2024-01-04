@@ -4,7 +4,7 @@
   "outputDirectory": "public",
   "rewrites": [
     {
-      "source": "/(host|account|loan)",
+      "source": "/(host|transactions|cards)",
       "destination": "api/index.js"
     }
   ],

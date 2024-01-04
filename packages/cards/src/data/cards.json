@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "price": "10000",
+            "name": "Travel Credit Card",
+            "description": "Best for Forex",
+            "image": "https://picsum.photos/700?a"
+        },
+        {
+            "id": "2",
+            "price": "20000",
+            "name": "Lifestyle Credit Card",
+            "description": "Best for online shopping",
+            "image": "https://picsum.photos/700?a"
+        }
+    ]
+}

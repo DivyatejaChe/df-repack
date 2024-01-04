@@ -1,23 +1,33 @@
 {
-  "name": "df-repack",
-  "version": "1.0.0",
-  "description": "",
+  "name": "super-app-showcase",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
   "packageManager": "pnpm@8.9.2",
   "scripts": {
     "start:host": "pnpm --filter host start",
-    "start:account": "pnpm --filter account start",
-    "start:loan": "pnpm --filter loan start",
+    "start:transactions": "pnpm --filter transactions start",
+    "start:cards": "pnpm --filter cards start",
     "start:auth": "pnpm --filter auth start",
     "start:catalog": "pnpm --filter catalog-server start",
+    "run:host:ios": "pnpm --filter host ios",
     "run:host:android": "pnpm --filter host android",
+    "bundle:auth:ios": "pnpm --filter auth bundle:ios",
+    "bundle:auth:android": "pnpm --filter auth bundle:android",
+    "pods": "pnpm -r pods",
+    "pods:update": "pnpm -r pods:update",
     "start": "concurrently --raw -P 'pnpm:start:*(!standalone) {1}'",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
     "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9000 tcp:9000 && adb reverse tcp:9001 tcp:9001 && adb reverse tcp:9002 tcp:9002 && adb reverse tcp:9003 tcp:9003",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "align-deps": "pnpm -r align-deps",
+    "check-deps": "pnpm -r check-deps"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.2"
   }
 }

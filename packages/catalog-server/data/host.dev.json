@@ -1,15 +1,15 @@
 {
   "ios": {
     "0.0.1": {
-      "account": "http://localhost:9000/[name][ext]",
-      "loan": "http://localhost:9001/[name][ext]",
+      "transactions": "http://localhost:9000/[name][ext]",
+      "cards": "http://localhost:9001/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     }
   },
   "android": {
     "0.0.1": {
-      "account": "http://localhost:9000/[name][ext]",
-      "loan": "http://localhost:9001/[name][ext]",
+      "transactions": "http://localhost:9000/[name][ext]",
+      "cards": "http://localhost:9001/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     }
   }
