@@ -2,14 +2,14 @@
   "ios": {
     "0.0.1": {
       "transactions": "http://localhost:9000/[name][ext]",
-      "cards": "http://localhost:9001/[name][ext]",
+      "cards": "http://localhost:9005/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     }
   },
   "android": {
     "0.0.1": {
       "transactions": "http://localhost:9000/[name][ext]",
-      "cards": "http://localhost:9001/[name][ext]",
+      "cards": "http://localhost:9005/[name][ext]",
       "auth": "http://localhost:9003/[name][ext]"
     }
   }
